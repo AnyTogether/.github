@@ -22,6 +22,20 @@ Thanks for wanting to help! Code, testing, translations, bug reports and game co
 
 Not sure where to start? Open an issue or ask in our Discord first, so two people don't build the same thing.
 
+## What CI checks on your PR
+
+Every pull request and every push to `main` runs GitHub Actions. One check, **`ci-ok`**, sums up the rest, and it is the only one `main` requires. Parts of a repo you did not touch are skipped and count as passed.
+
+| Repo | What runs |
+|---|---|
+| AnyPS5-ARM | Engine build and `ctest` on Linux (Ubuntu 22.04 build with the glibc 2.35 check, tests on 24.04 with lavapipe), Windows (WinLibs GCC 15.2) and macOS arm64 (x86-64 under Rosetta), only when `core/`, `cmake/`, `3rdparty/` or CMake files change. `swift test` for `tools/macos/launcher`. `flutter analyze`, `flutter test`, an APK and an unsigned iOS build for `mobile/`. |
+| AnyLauncher | `swift test` and `swift build -c release` on macOS 26. |
+| AnyLauncher-Port | `flutter analyze` and `flutter test` on Linux, the golden tests on macOS (where the goldens are made), `flutter build linux` (Ubuntu 22.04) and `flutter build windows`. |
+| AnyMobile | `flutter analyze`, `flutter test`, an APK and an unsigned iOS build. |
+| AnyTogether | Lint, typecheck and tests with Postgres and Valkey, and the production builds. |
+
+Tests that fail on `main` for a known reason, or depend on the runner (timing, real network, a GPU it lacks), are left out from one list per repo, each with its reason, such as `.github/anytogether-ci/ctest-known-failures.txt` in AnyPS5-ARM. If your change breaks a test, fix the test or the code; do not add it to the list. Pull requests from forks run with read-only permissions and no secrets.
+
 ## Ground rules
 
 - **Never contact Sony's servers** and never fake PSN sign-in. Online play goes through AnyTogether only.
