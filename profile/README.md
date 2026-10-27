@@ -15,9 +15,11 @@ Open source, made by players.
 
 | Project | What it is | Platforms |
 |---|---|---|
-| **[AnyPS5-ARM](https://github.com/AnyTogether/AnyPS5-ARM)** | The engine port for Apple silicon, a console-style launcher, and **AnyPS5 Remote**, the phone app that turns your phone into a controller | macOS · iOS · Android |
+| **[AnyPS5-ARM](https://github.com/AnyTogether/AnyPS5-ARM)** | The engine port for Apple silicon and the console-style Mac launcher; every release carries all platforms | macOS |
+| **[AnyPS5-Remote](https://github.com/AnyTogether/AnyPS5-Remote)** | The phone app: your phone as a DualSense, plus friends, party, voice and messages | iOS · Android |
 | **[AnyPS5-Desktop](https://github.com/AnyTogether/AnyPS5-Desktop)** | The launcher for Windows and Linux, with Steam and Steam Deck support | Windows · Linux |
 | **[AnyTogether](https://github.com/AnyTogether/AnyTogether)** | The online side: accounts, friends, parties and voice, messages, trophies, Play Together, Captures, cloud saves. You can run your own server | Web · self-hosted |
+| **[Website](https://anytogether.kodla.agency)** | Downloads, full specs, roadmap and your AnyTogether account in the browser. Its code is `apps/web` in the AnyTogether repo | Web |
 
 ### Highlights
 
