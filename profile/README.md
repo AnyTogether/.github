@@ -5,7 +5,7 @@
 **Play the PS5 games you own on your Mac, your PC and your phone, with your friends.**
 Open source, made by players.
 
-[Website](https://anytogether.kodla.agency) · [Full specs](https://anytogether.kodla.agency/specs) · [Download](https://github.com/AnyTogether/AnyPS5-ARM/releases/latest) · [Roadmap](https://anytogether.kodla.agency/roadmap)
+[Website](https://anytogether.net) · [Full specs](https://anytogether.net/specs) · [Download](https://github.com/AnyTogether/AnyPS5-ARM/releases/latest) · [Roadmap](https://anytogether.net/roadmap)
 
 </div>
 
@@ -20,7 +20,7 @@ Open source, made by players.
 | **[AnyLauncher Port](https://github.com/AnyTogether/AnyLauncher-Port)** | The same launcher for Windows and Linux, written in Flutter, with Steam and Steam Deck support | Windows · Linux |
 | **[AnyMobile](https://github.com/AnyTogether/AnyMobile)** | The phone app: your phone as a DualSense, plus friends, party, voice and messages | iOS · Android |
 | **[AnyTogether](https://github.com/AnyTogether/AnyTogether)** | Co-op and online: accounts, friends, parties and voice, messages, trophies, Play Together, Captures, cloud saves. You can run your own server | Web · self-hosted |
-| **[Website](https://anytogether.kodla.agency)** | Downloads, full specs, roadmap and your account in the browser. Its code is `apps/web` in the AnyTogether repo | Web |
+| **[Website](https://anytogether.net)** | Downloads, full specs, roadmap and your account in the browser. Its code is `apps/web` in the AnyTogether repo | Web |
 
 ### Highlights
 
